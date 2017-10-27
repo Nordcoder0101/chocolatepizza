@@ -1,0 +1,139 @@
+body {
+  width: 900px;
+}
+
+p {
+  color: #666;
+  font-size: 19px;
+  border: 1px dotted red;
+}
+
+h3 {
+  color: #666;
+  font-weight: bold;
+  font-size: 21px;
+  margin-top: 0;
+  display: inline;
+  border: 1px dotted red;
+}
+
+.ingredientsBox {
+  position:relative;
+  width:899px;
+  height:305px;
+  margin-bottom: 40px;
+  border: 1px dotted red;
+}
+
+ul.ingredientsList {
+  position: absolute;
+  font-family: 'Patrick Hand',cursive;
+  font-size: 23px;
+  color: #777;
+  list-style-type: none;
+  top: 12px;
+  left: 25px;
+  columns: 2;
+  column-gap: 10px;
+  margin-right: 100px;
+}
+
+li.columnBreak {
+  break-after: column;
+}
+
+input:checked {
+  text-decoration: line-through;
+}
+
+input[type=checkbox] {
+  background-color: transparent;
+}
+
+.sectionBreak {
+  height: 13px;
+  width: 900px;
+  background: repeating-linear-gradient(
+    45deg,
+    #777,
+    #777 1px,
+    #fff 1px,
+    #fff 4px
+  );
+  border: 1px dotted red;
+}
+
+footer {
+  margin-top: 20px;
+  border: 1px dotted red;
+}
+
+.profile {
+  float: left;
+  margin-right: 20px;
+  border: 1px dotted red;
+}
+
+.vanessa {
+  width: 75%;
+  float: left;
+}
+
+.sharebutton {
+  background-color: #BC7058;
+  padding: 20px 40px;
+  color: #FFF;
+  font-family: sans-serif;
+  float: right;
+  display: inline;
+  margin-top: 10px;
+}
+
+.bottomline
+{
+  height: 1px;
+  width: 900px;
+  background-color: #666;
+  position: relative;
+  margin-top: 200px;
+}
+
+/* .squaredFour */
+.check {
+  label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fcfff4;
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    &:after {
+      content: '';
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border: 3px solid #333;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.5;
+    }
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label:after {
+      opacity: 1;
+    }
+  }
+}
+/* end .squaredFour */
