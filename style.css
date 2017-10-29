@@ -1,11 +1,26 @@
 body {
   width: 900px;
+  margin:auto;
+}
+
+header {
+  margin-top: 35px;
+  margin-bottom: 30px;
 }
 
 p {
   color: #666;
   font-size: 19px;
-  border: 1px dotted red;
+  /*border: 1px dotted red;*/
+}
+
+h1 {
+  font-family: 'Yellowtail';
+  font-size: 36px;
+  display: inline;
+  position: absolute;
+  bottom: -15px;
+  left: 50px;
 }
 
 h3 {
@@ -14,7 +29,47 @@ h3 {
   font-size: 21px;
   margin-top: 0;
   display: inline;
-  border: 1px dotted red;
+  /*border: 1px dotted red;*/
+}
+
+h4 {
+  color: #B4ACAE;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 0px;
+}
+
+h5 {
+    font-family: 'Monaco';
+    font-size: 11px;
+    display: inline;
+    color: #999;
+    position: absolute;
+    bottom: -16px;
+    left: 52px;
+}
+
+.delicious {
+  position: relative;
+}
+
+.social {
+  position:absolute;
+  right: 0px;
+  display: inline;
+}
+
+.links{
+  padding: 0px 0.1px;
+}
+
+.links-left{
+  padding: 0px 4px 0px 0.1px;
+}
+
+.links-right{
+  padding: 0px 0.1px 0px 4px;
 }
 
 .ingredientsBox {
@@ -22,7 +77,7 @@ h3 {
   width:899px;
   height:305px;
   margin-bottom: 40px;
-  border: 1px dotted red;
+  /*border: 1px dotted red;*/
 }
 
 ul.ingredientsList {
@@ -34,7 +89,7 @@ ul.ingredientsList {
   top: 12px;
   left: 25px;
   columns: 2;
-  column-gap: 10px;
+  column-gap: 40px;
   margin-right: 100px;
 }
 
@@ -42,12 +97,8 @@ li.columnBreak {
   break-after: column;
 }
 
-input:checked {
-  text-decoration: line-through;
-}
-
-input[type=checkbox] {
-  background-color: transparent;
+.check:checked {
+  background-color: #000;
 }
 
 .sectionBreak {
@@ -55,28 +106,30 @@ input[type=checkbox] {
   width: 900px;
   background: repeating-linear-gradient(
     45deg,
-    #777,
-    #777 1px,
+    #969696,
+    #969696 1px,
     #fff 1px,
     #fff 4px
   );
-  border: 1px dotted red;
+  /*border: 1px dotted red;*/
 }
 
 footer {
   margin-top: 20px;
-  border: 1px dotted red;
+  /*border: 1px dotted red;*/
+  position:relative;
 }
 
 .profile {
   float: left;
   margin-right: 20px;
-  border: 1px dotted red;
+  /*border: 1px dotted red;*/
 }
 
 .vanessa {
   width: 75%;
   float: left;
+  margin-bottom: 50;
 }
 
 .sharebutton {
@@ -89,51 +142,39 @@ footer {
   margin-top: 10px;
 }
 
+.emptybox {
+  width:900px;
+  height:185px;
+}
+
 .bottomline
 {
   height: 1px;
   width: 900px;
-  background-color: #666;
-  position: relative;
-  margin-top: 200px;
+  background-color: #ECECEC;
+  position: absolute;
+  top:200px;
+  display: block;
+  z-index: -1;
 }
 
-/* .squaredFour */
-.check {
-  label {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fcfff4;
-    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-    border-radius: 4px;
-    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
-    &:after {
-      content: '';
-      width: 9px;
-      height: 5px;
-      position: absolute;
-      top: 4px;
-      left: 4px;
-      border: 3px solid #333;
-      border-top: none;
-      border-right: none;
-      background: transparent;
-      opacity: 0;
-      transform: rotate(-45deg);
-    }
-    &:hover::after {
-      opacity: 0.5;
-    }
-  }
-  input[type=checkbox] {
-    visibility: hidden;
-    &:checked + label:after {
-      opacity: 1;
-    }
-  }
+.smallLogo {
+  margin:auto;
+  display:block;
 }
-/* end .squaredFour */
+
+input[type="checkbox"] {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:0px 6px 0 0;
+    vertical-align:middle;
+    filter: invert(2%);
+}
+
+input[type="checkbox"]:checked {
+}
+
+input:checked + label {
+  text-decoration: line-through;
+}
