@@ -1,3 +1,90 @@
+
+
+
+body,html {
+  width: 100%;
+  height: 40%;
+}
+
+header {
+  margin: 0 auto;
+  height: 45%;
+  width: 80%;
+  border: 1px dotted blue;
+  background-color: red;
+
+}
+
+
+main {
+
+  width: 960px;
+  border: 1px dotted black;
+  margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Viga', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 120px;
+
+}
+
+.date_stamp {
+
+    margin-left: 121px;
+    text-shadow: 1px 1px;
+    float: left;
+    opacity: .2;
+    font-size: 11px;
+    margin-top: 3px;
+        }
+
+.just_below_header {
+  margin: 0 auto;
+
+}
+p {
+font-family: helvetica;
+font-style: italic;
+font-size: 12px;
+font-weight: bold;
+color: grey;
+padding: 4px;
+line-height: 18px;
+margin: auto 0;
+}
+
+.print {
+    position: relative;
+    float: right;
+    opacity: .3;
+    font-size: 11px;
+    margin-right: 118px;
+    margin-top: 7px;
+    }
+
+.print_text{
+  padding-left: 0px;
+  float: right;
+}
+
+.print_pic{
+  float: left;
+  }
+
+.pizza_photo {
+  margin-top: 35px;
+  clear: both;
+  width: 960px;
+  text-align: center;
+
+
+}
+.recipe {
+  clear: both;
+=======
 body {
   width: 900px;
   margin:auto;
@@ -181,4 +268,5 @@ input[type="checkbox"]:checked {
 
 input:checked + label {
   text-decoration: line-through;
+
 }
