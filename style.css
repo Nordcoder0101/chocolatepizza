@@ -1,90 +1,8 @@
-
-
-
-body,html {
+html {
   width: 100%;
   height: 40%;
 }
 
-header {
-  margin: 0 auto;
-  height: 45%;
-  width: 80%;
-  border: 1px dotted blue;
-  background-color: red;
-
-}
-
-
-main {
-
-  width: 960px;
-  border: 1px dotted black;
-  margin: 0 auto;
-}
-
-h2 {
-    font-family: 'Viga', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 120px;
-
-}
-
-.date_stamp {
-
-    margin-left: 121px;
-    text-shadow: 1px 1px;
-    float: left;
-    opacity: .2;
-    font-size: 11px;
-    margin-top: 3px;
-        }
-
-.just_below_header {
-  margin: 0 auto;
-
-}
-p {
-font-family: helvetica;
-font-style: italic;
-font-size: 12px;
-font-weight: bold;
-color: grey;
-padding: 4px;
-line-height: 18px;
-margin: auto 0;
-}
-
-.print {
-    position: relative;
-    float: right;
-    opacity: .3;
-    font-size: 11px;
-    margin-right: 118px;
-    margin-top: 7px;
-    }
-
-.print_text{
-  padding-left: 0px;
-  float: right;
-}
-
-.print_pic{
-  float: left;
-  }
-
-.pizza_photo {
-  margin-top: 35px;
-  clear: both;
-  width: 960px;
-  text-align: center;
-
-
-}
-.recipe {
-  clear: both;
-=======
 body {
   width: 900px;
   margin:auto;
@@ -99,46 +17,109 @@ main {
   margin-top: 60px;
 }
 
-p {
-  color: #666;
-  font-size: 19px;
-  /*border: 1px dotted red;*/
+footer {
+  margin-top: 20px;
+  position:relative;
 }
 
+/* Delicious */
 h1 {
   font-family: 'Yellowtail';
   font-size: 36px;
   display: inline;
   position: absolute;
-  bottom: -15px;
+  bottom: 15px;
   left: 50px;
 }
 
+/*Chocolate Pizza*/
+h2 {
+  font-family: 'Viga', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 120px;
+}
+
+/*Vanessa Stevenson*/
 h3 {
   color: #666;
   font-weight: bold;
   font-size: 21px;
   margin-top: 0;
   display: inline;
-  /*border: 1px dotted red;*/
 }
 
+/*Copyright info*/
 h4 {
   color: #B4ACAE;
   font-size: 16px;
   font-weight: lighter;
   text-align: center;
-  line-height: 0px;
+  line-height: 16px;
 }
 
+/*BEST FOOD BLOG*/
 h5 {
     font-family: 'Monaco';
     font-size: 11px;
     display: inline;
     color: #999;
     position: absolute;
-    bottom: -16px;
+    bottom: 4px;
     left: 52px;
+}
+
+p {
+/*font-family: helvetica;
+font-style: italic;*/
+font-size: 19px;
+/*font-weight: bold;*/
+color: #666;
+/*padding: 4px;
+line-height: 18px;
+margin: auto 0;*/
+}
+
+.date_stamp {
+    margin-left: 121px;
+    text-shadow: 1px 1px;
+    float: left;
+    opacity: .2;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+.just_below_header {
+  margin: 0 auto;
+}
+
+.print {
+  position: relative;
+  float: right;
+  opacity: .3;
+  font-size: 11px;
+  margin-right: 118px;
+  margin-top: 7px;
+}
+
+.print_text{
+  padding-left: 0px;
+  float: right;
+}
+
+.print_pic{
+  float: left;
+}
+
+.pizza_photo {
+  margin-top: 35px;
+  clear: both;
+  width: 960px;
+  text-align: center;
+}
+
+.recipe {
+  clear: both;
 }
 
 .delicious {
@@ -168,28 +149,23 @@ h5 {
   width:899px;
   height:305px;
   margin-bottom: 40px;
-  /*border: 1px dotted red;*/
 }
 
 ul.ingredientsList {
   position: absolute;
   font-family: 'Patrick Hand',cursive;
-  font-size: 23px;
+  font-size: 24px;
   color: #777;
   list-style-type: none;
-  top: 12px;
-  left: 25px;
+  top: 40px;
+  left: 60px;
   columns: 2;
   column-gap: 40px;
   margin-right: 100px;
 }
 
-li.columnBreak {
+.columnBreak {
   break-after: column;
-}
-
-.check:checked {
-  background-color: #000;
 }
 
 .sectionBreak {
@@ -202,19 +178,11 @@ li.columnBreak {
     #fff 1px,
     #fff 4px
   );
-  /*border: 1px dotted red;*/
-}
-
-footer {
-  margin-top: 20px;
-  /*border: 1px dotted red;*/
-  position:relative;
 }
 
 .profile {
   float: left;
   margin-right: 20px;
-  /*border: 1px dotted red;*/
 }
 
 .vanessa {
@@ -263,10 +231,6 @@ input[type="checkbox"] {
     filter: invert(2%);
 }
 
-input[type="checkbox"]:checked {
-}
-
 input:checked + label {
   text-decoration: line-through;
-
 }
